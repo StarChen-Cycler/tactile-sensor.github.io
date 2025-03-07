@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tactile Sensor Visualizations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .sensor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .sensor-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .sensor-card:hover {
+            transform: translateY(-5px);
+        }
+        .sensor-card img {
+            width: 100%;
+            height: auto;
+            max-height: 180px;
+            object-fit: contain;
+        }
+        .sensor-info {
+            padding: 15px;
+        }
+        .sensor-info h2 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .sensor-info p {
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        .view-btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .view-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tactile Sensor Visualizations</h1>
+        
+        <div class="sensor-grid">
+            <div class="sensor-card">
+                <img src="assets/images/ResistorType.png" alt="Resistor Type Sensor">
+                <div class="sensor-info">
+                    <h2>Resistor Type</h2>
+                    <p>Measures resistance changes to detect pressure or touch. The resistance value changes when the medium is under pressure.</p>
+                    <a href="resistance.html" class="view-btn">View Visualization</a>
+                </div>
+            </div>
+            
+            <div class="sensor-card">
+                <img src="assets/images/CapacitorType.png" alt="Capacitor Type Sensor">
+                <div class="sensor-info">
+                    <h2>Capacitor Type</h2>
+                    <p>Measures capacitance changes caused by pressure or external force altering the distance between capacitor plates.</p>
+                    <a href="capacitance.html" class="view-btn">View Visualization</a>
+                </div>
+            </div>
+            
+            <div class="sensor-card">
+                <img src="assets/images/ElectromagneticType.png" alt="Electromagnetic Type Sensor">
+                <div class="sensor-info">
+                    <h2>Electromagnetic Type</h2>
+                    <p>Detects magnetic field changes using the Hall effect to sense tactile information.</p>
+                    <a href="electromagnetic.html" class="view-btn">View Visualization</a>
+                </div>
+            </div>
+            
+            <div class="sensor-card">
+                <img src="assets/images/Six-Dimensional-ForceType.png" alt="Six-Dimensional Force Sensor">
+                <div class="sensor-info">
+                    <h2>Six-Dimensional Force Sensor</h2>
+                    <p>Uses strain gauges to measure force changes. Strain gauges on an elastic body change resistance when force is applied.</p>
+                    <a href="six-dimensional.html" class="view-btn">View Visualization</a>
+                </div>
+            </div>
+            
+            <div class="sensor-card">
+                <img src="assets/images/VisualTactileType.png" alt="Visual-Tactile Sensor">
+                <div class="sensor-info">
+                    <h2>Visual-Tactile</h2>
+                    <p>Mimics human skin using a gel head and internal camera to capture changes and establish a tactile information mapping.</p>
+                    <a href="haptic-vision.html" class="view-btn">View Visualization</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

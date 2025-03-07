@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual-Tactile Sensor Visualization</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        #info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            max-width: 350px;
+            font-size: 14px;
+            z-index: 100;
+        }
+        #info h1 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+        #info h2 {
+            font-size: 16px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        #info ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+        #info p {
+            margin: 5px 0;
+        }
+        #canvas {
+            width: 100%;
+            height: 100vh;
+            display: block;
+        }
+        .back-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #3498db;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1000;
+        }
+        .back-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">
+        <h1>Visual-Tactile Sensor</h1>
+        <p><strong>Principle:</strong> Mimics human skin using a gel head and internal camera to capture changes and establish a tactile information mapping.</p>
+        
+        <h2>Technical Characteristics:</h2>
+        <ul>
+            <li>High power consumption, not suitable for modular use.</li>
+            <li>Optical focusing requires distance and thickness.</li>
+            <li>Inconsistent, difficult standardization.</li>
+            <li>Low frequency, lacks high-frequency information.</li>
+            <li>High bandwidth requirements.</li>
+            <li>Poor force measurement accuracy.</li>
+        </ul>
+        
+        <h2>Problem-Solving:</h2>
+        <p>No effective solution since inception.</p>
+        
+        <h2>Market Prospect:</h2>
+        <p>Suitable for high-end applications like universities with high requirements for bandwidth, lifespan, and size.</p>
+    </div>
+    
+    <a href="index.html" class="back-btn">Back to Home</a>
+    
+    <canvas id="canvas"></canvas>
+    
+    <script src="assets/js/three.min.js"></script>
+    <script src="assets/js/OrbitControls.js"></script>
+    <script src="assets/js/sensors/haptic-vision.js"></script>
+</body>
+</html> 
